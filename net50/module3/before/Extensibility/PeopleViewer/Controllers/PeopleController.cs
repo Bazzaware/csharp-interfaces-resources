@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PersonReader.CSV;
+using Microsoft.Extensions.Configuration;
 using PersonReader.Interface;
 using PersonReader.ReaderFactory;
-using PersonReader.Service;
-using PersonReader.SQL;
 using System.Collections.Generic;
 
 namespace PeopleViewer.Controllers
@@ -11,6 +9,19 @@ namespace PeopleViewer.Controllers
     public class PeopleController : Controller
     {
         private ReaderFactory _readerFactory = new ReaderFactory();
+        private IConfiguration _confguration;
+
+        public PeopleController(IConfiguration configuration)
+        {
+            _confguration = configuration;
+        }
+
+        public IActionResult UseConfiguredReader()
+        {
+            ViewData["Title"] = "Using configured reader";
+            string readerType = _confguration["PersonReaderType"];
+            return PopulatePerson(readerType);
+        }
 
         public IActionResult UseService()
         {
