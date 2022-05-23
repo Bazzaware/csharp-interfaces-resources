@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Text.Json;
 
-namespace PersonReader.ServiceReader
+namespace PersonReader.Service
 {
     public class ServiceReader : IPersonReader
     {

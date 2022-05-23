@@ -13,11 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonReader.Interface", "P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleViewer", "PeopleViewer\PeopleViewer.csproj", "{92454235-3ABD-4D1F-8B85-B212A2D96AF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonReader.ServiceReader", "PersonReader\PersonReader.ServiceReader\PersonReader.ServiceReader.csproj", "{BF756835-CCF2-4A8C-BCF1-D67CB6F1AD25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonReader.Service", "PersonReader\PersonReader.ServiceReader\PersonReader.Service.csproj", "{BF756835-CCF2-4A8C-BCF1-D67CB6F1AD25}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonReader.CSV", "PersonReader.CSV\PersonReader.CSV.csproj", "{EE7F3413-7079-4F10-8468-8C4DEFE7F09A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonReader.SQL", "PersonReader.SQL\PersonReader.SQL.csproj", "{240DD412-5580-4BFD-87CD-860ECC36D85F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonReader.ReaderFactory", "PersonReader.ReaderFactory\PersonReader.ReaderFactory.csproj", "{718B5E7B-526F-45DC-A306-5441C3377803}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{240DD412-5580-4BFD-87CD-860ECC36D85F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{240DD412-5580-4BFD-87CD-860ECC36D85F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{240DD412-5580-4BFD-87CD-860ECC36D85F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{718B5E7B-526F-45DC-A306-5441C3377803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{718B5E7B-526F-45DC-A306-5441C3377803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{718B5E7B-526F-45DC-A306-5441C3377803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{718B5E7B-526F-45DC-A306-5441C3377803}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{BF756835-CCF2-4A8C-BCF1-D67CB6F1AD25} = {EBDE7883-D671-4736-8FA6-87699F60D81B}
 		{EE7F3413-7079-4F10-8468-8C4DEFE7F09A} = {EBDE7883-D671-4736-8FA6-87699F60D81B}
 		{240DD412-5580-4BFD-87CD-860ECC36D85F} = {EBDE7883-D671-4736-8FA6-87699F60D81B}
+		{718B5E7B-526F-45DC-A306-5441C3377803} = {EBDE7883-D671-4736-8FA6-87699F60D81B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {313631F0-55E2-4C7B-9684-7EA8D87581E0}
